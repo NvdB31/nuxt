@@ -89,7 +89,7 @@ All fetch options can be given a `computed` or `ref` value. These will be watche
 ::
 
 - `Options` (from [`useAsyncData`](/docs/api/composables/use-async-data)):
-  - `key`: a unique key to ensure that data fetching can be properly de-duplicated across requests, if not provided, it will be automatically generated based on URL and fetch options
+  - `key`: a unique key to ensure that data fetching can be properly de-duplicated across requests when using `getCachedData`. If not provided, it will be automatically generated based on URL and fetch options.
   - `server`: whether to fetch the data on the server (defaults to `true`)
   - `lazy`: whether to resolve the async function after loading the route, instead of blocking client-side navigation (defaults to `false`)
   - `immediate`: when set to `false`, will prevent the request from firing immediately. (defaults to `true`)
